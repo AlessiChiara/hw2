@@ -1,0 +1,93 @@
+:root {
+    --rich-black-fogra-29_50: hsl(210, 26%, 11%, 0.5);
+    --rich-black-fogra-29-1: hsl(210, 26%, 11%);
+    --rich-black-fogra-29-2: hsl(210, 50%, 4%);
+    --silver-metallic: hsl(212, 9%, 67%);
+    --coquelicot_20: hsla(12, 98%, 52%, 0.2);
+    --coquelicot_10: hsla(12, 98%, 52%, 0.1);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --cadet-gray: hsl(214, 15%, 62%);
+    --light-gray: hsl(0, 0%, 80%);
+    --coquelicot: hsl(12, 98%, 52%);
+    --gainsboro: hsl(0, 0%, 88%);
+    --white_20: hsl(0, 0%, 100%, 0.2);
+    --white_10: hsl(0, 0%, 100%, 0.1);
+    --black_10: hsl(0, 0%, 0%, 0.1);
+    --white: hsl(0, 0%, 100%);
+    --max-width: 1200px;
+    --primary-color: #111317;
+    --primary-color-light: #1f2125;
+    --primary-color-extra-light: #35373b;
+    --yellow: #fed330;
+    --red: #800000;
+    --light-red: #A52A2A;
+    --light-color: #777;
+    --border: .2rem solid var(--black);
+    --text-light: #d1d5db;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: var(--red);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--red);
+    padding: 2rem;
+}
+
+.form-container form {
+    background: var(--rich-black-fogra-29-2);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--black_10);
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.form-container form h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--coquelicot);
+}
+
+.form-container form .box {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--white);
+    background: var(--rich-black-fogra-29-1);
+    border: var(--border);
+    border-radius: .5rem;
+}
+
+.form-container form .box::placeholder {
+    color: var(--light-color);
+}
+
+.form-container form .btn {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--white);
+    background: var(--coquelicot);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-container form .btn:hover {
+    background: var(--coquelicot_20);
+}
